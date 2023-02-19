@@ -1,0 +1,10 @@
+vis = {}
+
+
+for i in range(len(nums)):
+  wanted = target - nums[i]
+
+  if wanted in vis:
+      return [vis[wanted], i ]
+  else:
+      vis[nums[i]] = i
